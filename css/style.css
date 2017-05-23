@@ -1,9 +1,5 @@
 /* Universal Styles */
 
-body{
-
-}
-
 a{
   color: black;
 }
@@ -37,4 +33,40 @@ header{
 nav span{
   display: inline-block;
   padding: 20px 10px;
+}
+
+/* Main */
+.column{
+  display: flex;
+  justify-content: flex-start;
+  border: 2px solid black;
+}
+
+.column .large .image{
+  display: flex;
+  border: 1px solid orange;
+}
+
+.column .large {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 630px;
+  justify-content: space-around;
+  border: 1px solid red;
+}
+
+.column .medium {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-basis: 300px;
+  border: 1px solid green;
+}
+
+.column .small {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-basis: : 240px;
+  border: 1px solid blue;
 }
