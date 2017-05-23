@@ -38,7 +38,7 @@ nav span{
 /* Main */
 .column{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   border: 3px solid black;
 }
 
@@ -51,36 +51,31 @@ nav span{
 .column .large {
   display: flex;
   flex-direction: column;
-  flex-basis: 630px;
-  justify-content: space-between;
+  /*flex-basis: 630px;*/
+  flex: 21;
+  justify-content: flex-start;
   border: 1px solid red;
+  margin: 10px 10px 0px 0px;
 }
-/*.column .large .image{
-  display: flex;
-  border: 1px solid orange;
-}*/
+
 
 .column .medium {
   display: flex;
   flex-direction: column;
-  flex-basis: 300px;
+  /*flex-basis: 300px;*/
+  flex: 10;
   justify-content: flex-start;
   border: 1px solid green;
+  margin: 10px 10px 0px 0px;
 }
 
-/*.column .medium .image{
-  display: flex;
-  border: 1px solid orange;
-}*/
 
 .column .small {
   display: flex;
   flex-direction: column;
-  flex-basis: 240px;
+  /*flex-basis: 240px;*/
+  flex: 8;
+  justify-content: flex-start;
+  margin: 10px 10px 0px 0px;
   border: 1px solid blue;
 }
-/*
-.column .small .image{
-  display: flex;
-  border: 1px solid orange;
-}*/
