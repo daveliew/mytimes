@@ -21,6 +21,7 @@ header{
   display: flex;
   color: MediumAquamarine;
   padding-left: 20px;
+  flex-grow: 2;
   align-items: center;
 }
 
