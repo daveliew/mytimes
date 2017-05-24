@@ -1,8 +1,8 @@
 /* Universal Styles */
-
 a{
   color: black;
 }
+
 /* Header */
 
 header{
@@ -42,18 +42,11 @@ nav span{
   border: 3px solid black;
 }
 
-.column .row{
-  display: flex;
-  flex-direction: column;
-  border: 2px solid coral;
-}
-
 .column .large {
   display: flex;
   flex-direction: column;
   /*flex-basis: 630px;*/
   flex: 21;
-  justify-content: flex-start;
   border: 1px solid red;
   margin: 20px 20px 0 0;
 }
@@ -76,4 +69,53 @@ nav span{
   justify-content: flex-start;
   border: 1px solid blue;
   margin: 20px 20px 0 0;
+}
+
+.row-image-main{
+  background-image: url(./images/img-story-main.png);
+  height: 300px;
+  display: flex;
+}
+
+.row-image-main span{
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
+  display: flex;
+}
+
+.row-image span{
+  font-family: Georgia;
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+  align-items: center;
+}
+
+.row-image#earth{
+  background-image: url(./images/img-story-2.png);
+  height: 300px;
+}
+
+.row-image#camera{
+  background-image: url(./images/img-story-3.png);
+  height: 300px;
+}
+
+.row-image#cats{
+  background-image: url(./images/img-story-1.png);
+  height: 300px;
+}
+
+.row-story{
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+}
+
+.horizontal{
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
 }
