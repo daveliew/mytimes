@@ -42,7 +42,7 @@ nav span{
   border: 3px solid black;
 }
 
-.column .article{
+.column .row{
   display: flex;
   flex-direction: column;
   border: 2px solid coral;
@@ -55,9 +55,8 @@ nav span{
   flex: 21;
   justify-content: flex-start;
   border: 1px solid red;
-  margin: 10px 10px 0px 0px;
+  margin: 20px 20px 0 0;
 }
-
 
 .column .medium {
   display: flex;
@@ -66,9 +65,8 @@ nav span{
   flex: 10;
   justify-content: flex-start;
   border: 1px solid green;
-  margin: 10px 10px 0px 0px;
+  margin: 20px 20px 0 0;
 }
-
 
 .column .small {
   display: flex;
@@ -76,6 +74,6 @@ nav span{
   /*flex-basis: 240px;*/
   flex: 8;
   justify-content: flex-start;
-  margin: 10px 10px 0px 0px;
   border: 1px solid blue;
+  margin: 20px 20px 0 0;
 }
