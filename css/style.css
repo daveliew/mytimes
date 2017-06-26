@@ -1,28 +1,56 @@
 /* Universal Styles */
-a{
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia;
+  font-size: 17px;
   color: black;
+}
+
+a {
+  color: black;
+}
+
+.top-margin {
+  margin-top: 16px
 }
 
 /* Header */
 
-header{
+header {
   display: flex;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 80px;
+  border-bottom: 1px solid black;
+  background-color: white;
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
-  padding: 10px;
 }
 
-.logo{
+header nav {
+  padding-right: 40px;
+}
+
+.logo {
   display: flex;
-  color: MediumAquamarine;
-  padding-left: 20px;
-  flex-grow: 2;
   align-items: center;
+  color: MediumAquamarine;
+  padding-left: 30px;
+  flex-grow: 1;
 }
 
-.logo img{
-  margin-right: 15px;
+.logo img {
+  margin-right: 12px;
+  width: 70px;
+  height: 60px;
 }
 
 .logo span{
@@ -36,103 +64,141 @@ nav span{
 }
 
 /* Main */
-.column{
+.container {
   display: flex;
-  justify-content: space-around;
-  border: 3px solid black;
+  width: 1232px;
+  margin: 0 auto 78px auto;
+  padding-top: 116px;
 }
 
-.column .large {
-  display: flex;
-  flex-direction: column;
-  /*flex-basis: 630px;*/
-  flex: 21;
-  border: 1px solid red;
-  margin: 20px 20px 0 0;
-}
-
-.column .medium {
+.column {
   display: flex;
   flex-direction: column;
-  /*flex-basis: 300px;*/
-  flex: 10;
-  justify-content: flex-start;
-  border: 1px solid green;
-  margin: 20px 20px 0 0;
+  margin-right: 32px;
 }
 
-.column .small {
+.column.large {
+  width: 630px;
+}
+
+.column.medium {
+  width: 300px;
+}
+
+.column.small {
+  width: 240px;
+}
+
+/* Large Column */
+.container-stories {
   display: flex;
-  flex-direction: column;
-  /*flex-basis: 240px;*/
-  flex: 8;
-  justify-content: flex-start;
-  border: 1px solid blue;
-  margin: 20px 20px 0 0;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 17px;
 }
 
-.row-image-main{
-  background-image: url(./images/img-story-main.png);
-  height: 300px;
-  display: flex;
-}
-
-.row-image-main span{
-  font-size: 40px;
-  color: white;
-  font-weight: bold;
-  display: flex;
-}
-
-.row-image span{
-  font-family: Georgia;
-  font-size: 30px;
-  color: white;
-  font-weight: bold;
-  align-items: center;
-}
-
-.row-image#earth{
-  background-image: url(./images/img-story-2.png);
-  height: 300px;
-}
-
-.row-image#camera{
-  background-image: url(./images/img-story-3.png);
-  height: 300px;
-}
-
-.row-image#cats{
-  background-image: url(./images/img-story-1.png);
-  height: 300px;
-}
-
-.row-story{
-  font-family: Georgia;
-  font-size: 17px;
-  color: black;
-}
-
-.horizontal{
-  border: 1px solid red;
+.row-story {
   display: flex;
   flex-direction: column;
   width: 300px;
 }
 
-#news-bites{
+.story-content {
+  height: 250px;
+}
+
+
+/* Images */
+
+.row-image-main {
+  background-image: url(./images/img-story-main.png);
+  width: 630px;
+  height: 300px;
+  margin-top: 0;
+  font-size: 40px;
+  text-align: left;
+}
+
+.row-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 300px;
+  width: 300px;
+  margin-top: 15px;
+}
+
+.row-image-main span {
+  display: flex;
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
+}
+
+.row-image span {
+  font-family: Georgia;
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+.row-image#earth {
+  background-image: url(./images/img-story-2.png);
+}
+
+.row-image#camera {
+  background-image: url(./images/img-story-3.png);
+}
+
+.row-image#cats {
+  background-image: url(./images/img-story-1.png);
+  height: 300px;
+}
+
+/* News Bites */
+.news-bites h3{
   font-size: 16px;
   font-weight: bold;
   text-align: center;
-  margin: 30px;
+  margin-bottom: 41px;
 }
 
-.snippet{
-  display: flex;
+.snippet {
+  display: block;
   background-color: WhiteSmoke;
   font-family: Verdana;
   font-size: 12px;
   color: DimGray;
-  padding-left: 15px;
+  padding: 11px 20px;
   border-bottom: 1px solid black;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: MediumAquamarine;
+  margin: auto;
+  font-family: Verdana;
+  font-size: 12px;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  width: 100%;
+}
+
+.company-name {
+  display: inline-block;
+  padding-right: 25px;
+  border-right: 3px solid white;
+  font-family: Georgia;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+
+footer nav {
+  display: inline-block;
+  padding-left: 25px;
 }
